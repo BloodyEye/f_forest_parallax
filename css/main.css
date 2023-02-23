@@ -67,6 +67,7 @@ body{
 	transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
 }
 .layer__header{
+	position: absolute;
 	z-index: 1;
 	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
 	transition: var(--transition);
@@ -77,6 +78,7 @@ body{
 	text-shadow: 0 0 15px #9d822b;
 }
 .layers__caption{
+
 	font-size: calc(var(--index) / 1.175);
 	letter-spacing: calc(var(--index) / 3.5);
 	margin-top: calc(var(--index) / -.75);
@@ -100,6 +102,7 @@ body{
 	top: -1px;
 	z-index: 10;
 }
+
 .main-article__header{
 	text-transform: uppercase;
 	font-size: calc(var(--index) * 1.8);
@@ -125,4 +128,7 @@ body{
 	opacity: 0.45;
 	font-size: calc(var(--index) * .75);
 	letter-spacing: calc(var(--index) / 37.5);
+}
+.main-article__content{
+	position: absolute;
 }
